@@ -2,9 +2,11 @@
 import Tea from "./practice" 
 function App() {
   //always return one element that's why wrapped in fragment-<></>
+  const username='Attitude towards Gratitude'
   return (
     <>
     <Tea/>
+  <h1>{username}</h1>
    <p>Test para</p></>
    
   )
