@@ -1,8 +1,11 @@
-
+//name of component/functions should have first letter capatalize->Tea
+import Tea from "./practice" 
 function App() {
-  
+  //always return one element that's why wrapped in fragment-<></>
   return (
-    <h1>React With Tammy</h1>
+    <>
+    <Tea/>
+   <p>Test para</p></>
    
   )
 }
