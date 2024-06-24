@@ -7,7 +7,8 @@ function App() {
     <>
     <Tea/>
   <h1>{username}</h1>
-   <p>Test para</p></>
+   <p>Test para</p>
+   </>
    
   )
 }

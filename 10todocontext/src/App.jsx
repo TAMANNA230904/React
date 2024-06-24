@@ -27,7 +27,6 @@ const toggleComplete=(id)=>{
     prevTodo.id===id?{...prevTodo,completed:!prevTodo.completed}:prevTodo))
  }
 
-
  useEffect(()=>{
   const todos=JSON.parse(localStorage.getItem("todos"))
   if(todos && todos.length>0){
