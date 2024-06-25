@@ -4,14 +4,14 @@ import {addTodo} from '../features/todo/todoSlice'
 
 
 function AddTodo() {
-    const [input,setinput]=useState('')
+const [input,setinput]=useState('')
 const dispatch=useDispatch()
 const addTodoHandler=(e)=>{
-     e.prevntDefault()
+     e.preventDefault()
+     // dispatch uses a reducer to change the values in store
      dispatch(addTodo(input))
+     //clear the form after adding a todo
      setinput('')
-
-
 }
     return (
         <form onSubmit={addTodoHandler} className="space-x-3 mt-12">

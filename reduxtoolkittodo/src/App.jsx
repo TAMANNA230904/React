@@ -5,8 +5,6 @@ import './App.css'
 import AddTodo from './components/AddTodo'
 import Todos from './components/Todos'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
      <h1>Fun with Redux</h1>
@@ -15,5 +13,4 @@ function App() {
     </>
   )
 }
-
 export default App

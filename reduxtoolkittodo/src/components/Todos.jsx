@@ -11,10 +11,10 @@ function Todos() {
         Todos
        {todos.map((todo) => (
           <li key={todo.id}>
-            {todos.text}
-          <button
-            onClick={()=>dispatch(removeTodo(todo.id))}>X
-            </button>
+            {todo.text}
+            <button
+            //arrow function used beacause we only give reference 
+            onClick={()=>dispatch(removeTodo(todo.id))}>X</button>
             </li>
         ))}
         </div>
