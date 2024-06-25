@@ -10,11 +10,17 @@ function Todos() {
       <div>
         Todos
        {todos.map((todo) => (
-          <li key={todo.id}>
-            {todo.text}
-            <button
+          <li className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
+           key={todo.id}>
+           <div className="text-white">{todo.text}</div> 
+            <button className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
             //arrow function used beacause we only give reference 
-            onClick={()=>dispatch(removeTodo(todo.id))}>X</button>
+            onClick={()=>dispatch(removeTodo(todo.id))}>
+                ❌
+            </button>
+            <button className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0">
+            ✏️
+            </button>
             </li>
         ))}
         </div>
